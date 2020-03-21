@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="Gmail Suite" annotations="JDK" parallel="classes">
+
+    <test name="ParaleingTest">
+        <classes>
+            <class name="parallelTesting.parallelTest1"/>
+            <class name="parallelTesting.parallelTest2"/>
+
+
+        </classes>
+    </test>
+    <test name="ParaleingTest2">
+        <classes>
+            <class name="parallelTesting.parallelTest1"/>
+
+
+        </classes>
+    </test>
+</suite>

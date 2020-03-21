@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests" >
+
+
+
+
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.google.com/"/>
+
+    <test name="PrametersTest2">
+        <classes>
+            <class name="ParametersExample">
+                <methods>
+                    <include name="LogoTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.google.com/"/>
+
+    <test name="PrametersTest">
+        <classes>
+            <class name="ParametersExample">
+                <methods>
+                    <include name="homePageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
